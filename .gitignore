@@ -1,4 +1,8 @@
-package-lock.json
+/package-lock.json
 /node_modules/*
 /.idea/*
 /.git/*
+images/*
+img/*
+.gitignore
+.idea/
