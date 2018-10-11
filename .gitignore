@@ -1,6 +1,4 @@
-/package-lock.json
-/node_modules/*
-/.idea/*
-/.git/*
-/images/*
-/img/*
+.gitignore
+node_modules/
+.idea/
+package-lock.json
