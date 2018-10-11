@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12fbe79e-d995-4c1f-bccc-cc8dac25898d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,13 +15,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="107" column="3" lean-forward="false" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
+            <state relative-caret-position="337">
+              <caret line="149" column="15" lean-forward="false" selection-start-line="149" selection-start-column="15" selection-end-line="149" selection-end-column="15" />
               <folding>
                 <element signature="e#682#1018#0" expanded="false" />
+                <element signature="e#1057#1657#0" expanded="false" />
                 <element signature="e#1753#2040#0" expanded="false" />
                 <element signature="e#2081#2255#0" expanded="false" />
                 <element signature="e#2312#2779#0" expanded="false" />
@@ -29,17 +30,16 @@
                 <element signature="e#3108#3645#0" expanded="false" />
                 <element signature="e#3866#3979#0" expanded="false" />
                 <element signature="e#4031#4220#0" expanded="false" />
-                <element signature="e#4300#4993#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="smartgrid.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/smartgrid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/less/main.less" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
       </list>
     </option>
   </component>
@@ -253,12 +253,12 @@
       <workItem from="1539184577611" duration="4435000" />
       <workItem from="1539243205228" duration="3956000" />
       <workItem from="1539258639203" duration="2450000" />
-      <workItem from="1539263166972" duration="2541000" />
+      <workItem from="1539263166972" duration="4652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18058000" />
+    <option name="totallyTimeSpent" value="20169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1050" extended-state="0" />
@@ -303,6 +303,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#682#1018#0" expanded="false" />
+            <element signature="e#1057#1657#0" expanded="false" />
             <element signature="e#1753#2040#0" expanded="false" />
             <element signature="e#2081#2255#0" expanded="false" />
             <element signature="e#2312#2779#0" expanded="false" />
@@ -310,7 +311,6 @@
             <element signature="e#3108#3645#0" expanded="false" />
             <element signature="e#3866#3979#0" expanded="false" />
             <element signature="e#4031#4220#0" expanded="false" />
-            <element signature="e#4300#4993#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -345,6 +345,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#682#1018#0" expanded="false" />
+            <element signature="e#1057#1657#0" expanded="false" />
             <element signature="e#1753#2040#0" expanded="false" />
             <element signature="e#2081#2255#0" expanded="false" />
             <element signature="e#2312#2779#0" expanded="false" />
@@ -352,7 +353,6 @@
             <element signature="e#3108#3645#0" expanded="false" />
             <element signature="e#3866#3979#0" expanded="false" />
             <element signature="e#4031#4220#0" expanded="false" />
-            <element signature="e#4300#4993#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -387,6 +387,7 @@
           <caret line="65" column="4" lean-forward="false" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
           <folding>
             <element signature="e#682#1018#0" expanded="false" />
+            <element signature="e#1057#1657#0" expanded="false" />
             <element signature="e#1753#2040#0" expanded="false" />
             <element signature="e#2081#2255#0" expanded="false" />
             <element signature="e#2312#2779#0" expanded="false" />
@@ -394,7 +395,6 @@
             <element signature="e#3108#3645#0" expanded="false" />
             <element signature="e#3866#3979#0" expanded="false" />
             <element signature="e#4031#4220#0" expanded="false" />
-            <element signature="e#4300#4993#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -436,6 +436,7 @@
           <caret line="152" column="27" lean-forward="true" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
           <folding>
             <element signature="e#682#1018#0" expanded="false" />
+            <element signature="e#1057#1657#0" expanded="false" />
             <element signature="e#1753#2040#0" expanded="false" />
             <element signature="e#2081#2255#0" expanded="false" />
             <element signature="e#2312#2779#0" expanded="false" />
@@ -443,7 +444,6 @@
             <element signature="e#3108#3645#0" expanded="false" />
             <element signature="e#3866#3979#0" expanded="false" />
             <element signature="e#4031#4220#0" expanded="false" />
-            <element signature="e#4300#4993#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -463,13 +463,6 @@
     <entry file="file://$PROJECT_DIR$/src/css/scss/fonts.scss" />
     <entry file="file://$PROJECT_DIR$/src/css/scss/main.scss" />
     <entry file="file://$PROJECT_DIR$/src/css/scss/first_screen.scss" />
-    <entry file="file://$PROJECT_DIR$/smartgrid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/less/smart-grid.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -516,12 +509,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartgrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="107" column="3" lean-forward="false" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
+        <state relative-caret-position="337">
+          <caret line="149" column="15" lean-forward="false" selection-start-line="149" selection-start-column="15" selection-end-line="149" selection-end-column="15" />
           <folding>
             <element signature="e#682#1018#0" expanded="false" />
+            <element signature="e#1057#1657#0" expanded="false" />
             <element signature="e#1753#2040#0" expanded="false" />
             <element signature="e#2081#2255#0" expanded="false" />
             <element signature="e#2312#2779#0" expanded="false" />
@@ -529,16 +539,7 @@
             <element signature="e#3108#3645#0" expanded="false" />
             <element signature="e#3866#3979#0" expanded="false" />
             <element signature="e#4031#4220#0" expanded="false" />
-            <element signature="e#4300#4993#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

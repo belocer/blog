@@ -147,7 +147,7 @@ gulp.task("ftp", () => {
 const smartGridConf = {
     //outputStyle: "less",
     columns: 12, // количество колонок
-    offset: "15px", // Половина межколоночника
+    offset: "30px", // Половина межколоночника
     mobileFirst: false,
     container: {
         maxWidth: "1200px", // максимальная ширина сайта
