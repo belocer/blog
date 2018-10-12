@@ -7,12 +7,12 @@
 @break_xs: 576px;
 @break_xxs: 480px;
 
-@offset: 30px;
+@offset: 2.5%;
 @offset_lg: @offset;
 @offset_md: @offset;
 @offset_sm: @offset;
 @offset_xs: @offset;
-@offset_xxs: @offset;
+@offset_xxs: 10px;
 
 @offset_one_side: (@offset / 2);
 @offset_lg_one_side: (@offset_lg / 2);
@@ -61,11 +61,21 @@
 .row-offsets(){
     margin-left: (@offset_one_side * -1);
     margin-right: (@offset_one_side * -1);
+
+    .xxs-block({
+        margin-left: (@offset_xxs_one_side * -1);
+        margin-right: (@offset_xxs_one_side * -1);
+    });
 }
 
 .col-offsets(@type){
     @{type}-left: @offset_one_side;
     @{type}-right: @offset_one_side;
+
+    .xxs-block({
+        @{type}-left: @offset_xxs_one_side;
+        @{type}-right: @offset_xxs_one_side;
+    });
 }
 
 .wrapper(){
@@ -110,225 +120,183 @@
 }
 
 .size(@n){
-    @val: 100% / @columns * @n;
-    width: ~"calc(@{val} - @{offset})";
+    width: @atom * @n - @offset;
 }
 
 .size-lg(@n){
-    @val: 100% / @columns * @n;
-    .lg(width, ~"calc(@{val} - @{offset_lg})");
+    .lg(width, @atom * @n - @offset_lg);
 }
 
 .size-md(@n){
-    @val: 100% / @columns * @n;
-    .md(width, ~"calc(@{val} - @{offset_md})");
+    .md(width, @atom * @n - @offset_md);
 }
 
 .size-sm(@n){
-    @val: 100% / @columns * @n;
-    .sm(width, ~"calc(@{val} - @{offset_sm})");
+    .sm(width, @atom * @n - @offset_sm);
 }
 
 .size-xs(@n){
-    @val: 100% / @columns * @n;
-    .xs(width, ~"calc(@{val} - @{offset_xs})");
+    .xs(width, @atom * @n - @offset_xs);
 }
 
 .size-xxs(@n){
-    @val: 100% / @columns * @n;
-    .xxs(width, ~"calc(@{val} - @{offset_xxs})");
+    .xxs(width, @atom * @n - @offset_xxs);
 }
 
 .shift(@n){
-    @val: 100% / @columns * @n;
-    margin-left: ~"calc(@{val} + @{offset_one_side})";
-    margin-right: ~"calc(@{val} + @{offset_one_side})";
+    margin-left: @atom * @n + @offset_one_side;
+    margin-right: @atom * @n + @offset_one_side;
 }
 
 .shift-left(@n){
-    @val: 100% / @columns * @n;
-    margin-left: ~"calc(@{val} + @{offset_one_side})";
+    margin-left: @atom * @n + @offset_one_side;
 }
 
 .shift-right(@n){
-    @val: 100% / @columns * @n;
-    margin-right: ~"calc(@{val} + @{offset_one_side})";
+    margin-right: @atom * @n + @offset_one_side;
 }
 
 .shift-padding(@n){
-    @val: 100% / @columns * @n;
-    padding-left: ~"calc(@{val} + @{offset_one_side})";
-    padding-right: ~"calc(@{val} + @{offset_one_side})";
+    padding-left: @atom * @n + @offset_one_side;
+    padding-right: @atom * @n + @offset_one_side;
 }
 
 .shift-padding-left(@n){
-    @val: 100% / @columns * @n;
-    padding-left: ~"calc(@{val} + @{offset_one_side})";
+    padding-left: @atom * @n + @offset_one_side;
 }
 
 .shift-padding-right(@n){
-    @val: 100% / @columns * @n;
-    padding-right: ~"calc(@{val} + @{offset_one_side})";
+    padding-right: @atom * @n + @offset_one_side;
 }
 
 .shift-lg(@n){
-    @val: 100% / @columns * @n;
-    .lg(margin-left, ~"calc(@{val} + @{offset_lg_one_side})");
-    .lg(margin-right, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(margin-left, @atom * @n + @offset_lg_one_side);
+    .lg(margin-right, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-lg-left(@n){
-    @val: 100% / @columns * @n;
-    .lg(margin-left, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(margin-left, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-lg-right(@n){
-    @val: 100% / @columns * @n;
-    .lg(margin-right, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(margin-right, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-lg-padding(@n){
-    @val: 100% / @columns * @n;
-    .lg(padding-left, ~"calc(@{val} + @{offset_lg_one_side})");
-    .lg(padding-right, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(padding-left, @atom * @n + @offset_lg_one_side);
+    .lg(padding-right, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-lg-padding-left(@n){
-    @val: 100% / @columns * @n;
-    .lg(padding-left, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(padding-left, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-lg-padding-right(@n){
-    @val: 100% / @columns * @n;
-    .lg(padding-right, ~"calc(@{val} + @{offset_lg_one_side})");
+    .lg(padding-right, @atom * @n + @offset_lg_one_side);
 }
 
 .shift-md(@n){
-    @val: 100% / @columns * @n;
-    .md(margin-left, ~"calc(@{val} + @{offset_md_one_side})");
-    .md(margin-right, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(margin-left, @atom * @n + @offset_md_one_side);
+    .md(margin-right, @atom * @n + @offset_md_one_side);
 }
 
 .shift-md-left(@n){
-    @val: 100% / @columns * @n;
-    .md(margin-left, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(margin-left, @atom * @n + @offset_md_one_side);
 }
 
 .shift-md-right(@n){
-    @val: 100% / @columns * @n;
-    .md(margin-right, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(margin-right, @atom * @n + @offset_md_one_side);
 }
 
 .shift-md-padding(@n){
-    @val: 100% / @columns * @n;
-    .md(padding-left, ~"calc(@{val} + @{offset_md_one_side})");
-    .md(padding-right, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(padding-left, @atom * @n + @offset_md_one_side);
+    .md(padding-right, @atom * @n + @offset_md_one_side);
 }
 
 .shift-md-padding-left(@n){
-    @val: 100% / @columns * @n;
-    .md(padding-left, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(padding-left, @atom * @n + @offset_md_one_side);
 }
 
 .shift-md-padding-right(@n){
-    @val: 100% / @columns * @n;
-    .md(padding-right, ~"calc(@{val} + @{offset_md_one_side})");
+    .md(padding-right, @atom * @n + @offset_md_one_side);
 }
 
 .shift-sm(@n){
-    @val: 100% / @columns * @n;
-    .sm(margin-left, ~"calc(@{val} + @{offset_sm_one_side})");
-    .sm(margin-right, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(margin-left, @atom * @n + @offset_sm_one_side);
+    .sm(margin-right, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-sm-left(@n){
-    @val: 100% / @columns * @n;
-    .sm(margin-left, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(margin-left, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-sm-right(@n){
-    @val: 100% / @columns * @n;
-    .sm(margin-right, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(margin-right, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-sm-padding(@n){
-    @val: 100% / @columns * @n;
-    .sm(padding-left, ~"calc(@{val} + @{offset_sm_one_side})");
-    .sm(padding-right, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(padding-left, @atom * @n + @offset_sm_one_side);
+    .sm(padding-right, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-sm-padding-left(@n){
-    @val: 100% / @columns * @n;
-    .sm(padding-left, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(padding-left, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-sm-padding-right(@n){
-    @val: 100% / @columns * @n;
-    .sm(padding-right, ~"calc(@{val} + @{offset_sm_one_side})");
+    .sm(padding-right, @atom * @n + @offset_sm_one_side);
 }
 
 .shift-xs(@n){
-    @val: 100% / @columns * @n;
-    .xs(margin-left, ~"calc(@{val} + @{offset_xs_one_side})");
-    .xs(margin-right, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(margin-left, @atom * @n + @offset_xs_one_side);
+    .xs(margin-right, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xs-left(@n){
-    @val: 100% / @columns * @n;
-    .xs(margin-left, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(margin-left, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xs-right(@n){
-    @val: 100% / @columns * @n;
-    .xs(margin-right, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(margin-right, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xs-padding(@n){
-    @val: 100% / @columns * @n;
-    .xs(padding-left, ~"calc(@{val} + @{offset_xs_one_side})");
-    .xs(padding-right, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(padding-left, @atom * @n + @offset_xs_one_side);
+    .xs(padding-right, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xs-padding-left(@n){
-    @val: 100% / @columns * @n;
-    .xs(padding-left, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(padding-left, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xs-padding-right(@n){
-    @val: 100% / @columns * @n;
-    .xs(padding-right, ~"calc(@{val} + @{offset_xs_one_side})");
+    .xs(padding-right, @atom * @n + @offset_xs_one_side);
 }
 
 .shift-xxs(@n){
-    @val: 100% / @columns * @n;
-    .xxs(margin-left, ~"calc(@{val} + @{offset_xxs_one_side})");
-    .xxs(margin-right, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(margin-left, @atom * @n + @offset_xxs_one_side);
+    .xxs(margin-right, @atom * @n + @offset_xxs_one_side);
 }
 
 .shift-xxs-left(@n){
-    @val: 100% / @columns * @n;
-    .xxs(margin-left, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(margin-left, @atom * @n + @offset_xxs_one_side);
 }
 
 .shift-xxs-right(@n){
-    @val: 100% / @columns * @n;
-    .xxs(margin-right, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(margin-right, @atom * @n + @offset_xxs_one_side);
 }
 
 .shift-xxs-padding(@n){
-    @val: 100% / @columns * @n;
-    .xxs(padding-left, ~"calc(@{val} + @{offset_xxs_one_side})");
-    .xxs(padding-right, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(padding-left, @atom * @n + @offset_xxs_one_side);
+    .xxs(padding-right, @atom * @n + @offset_xxs_one_side);
 }
 
 .shift-xxs-padding-left(@n){
-    @val: 100% / @columns * @n;
-    .xxs(padding-left, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(padding-left, @atom * @n + @offset_xxs_one_side);
 }
 
 .shift-xxs-padding-right(@n){
-    @val: 100% / @columns * @n;
-    .xxs(padding-right, ~"calc(@{val} + @{offset_xxs_one_side})");
+    .xxs(padding-right, @atom * @n + @offset_xxs_one_side);
 }
 
 .lg(@name, @value){
@@ -492,6 +460,7 @@
             > div{
                 .col();
                 .size(1);
+                .size-xxs(1);
                 height: inherit;
                 outline: @outline;
                 background: @background;
