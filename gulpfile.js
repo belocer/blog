@@ -71,10 +71,10 @@ gulp.task("default", ["bs", "build", "htmlo", "jso"], () => {
 // BrowserSync
 gulp.task("bs", () => {
     bs.init({
-        //proxy: "http://test/app/"                   // Для работы с php на OpenServer
-        server: {
+        proxy: "http://blog/dist/"                   // Для работы с php на OpenServer
+/*        server: {                                  // Для работы без OpenServer
             baseDir: config.dist
-        }
+        }*/
     });
 });
 
